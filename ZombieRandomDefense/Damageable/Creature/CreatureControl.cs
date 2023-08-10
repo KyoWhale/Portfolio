@@ -19,8 +19,8 @@ public abstract class CreatureControl: CreatureComponent
 
     protected Type m_currentControlType;
 
-    public Action<Type> startControlled;
-    public Action endControlled;
+    public event Action<Type> startControlled;
+    public event Action endControlled;
 
     protected virtual void Start()
     {
@@ -43,5 +43,7 @@ public abstract class CreatureControl: CreatureComponent
     private void ControlEnd()
     {
         m_currentControlType = Type.None;
+        m_creature.TryChangeState(Creature.State.Idle);
+        endControlled?.Invoke();
     }
 }
