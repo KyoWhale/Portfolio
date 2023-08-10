@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CreatureInteractSMB : CreatureStateMachineBehaviour<Creature>
+public class CreatureInteractSMB : CreatureStateMachineBehaviour
 {
     
 }
