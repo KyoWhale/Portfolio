@@ -15,7 +15,7 @@ SMB 주의사항
 https://jinhomang.tistory.com/118
 */
 
-public class CreatureStateMachineBehaviour<T> : StateMachineBehaviour where T : Creature
+public class CreatureStateMachineBehaviour : StateMachineBehaviour
 {
     public event Action enter;
     public event Action exit;
