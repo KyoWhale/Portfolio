@@ -1,0 +1,53 @@
+Toolbar
+{
+    background-color: var(--ds-colors-window-dark-grey-1);
+    height: var(--ds-metrics-window-pixels-40);
+}
+
+Button
+{
+    background-color: var(--ds-colors-window-dark-grey-5);
+    border-color: var(--ds-colors-window-dark-grey-1);
+    margin: var(--ds-metrics-window-pixels-8);
+    max-height: var(--ds-metrics-window-pixels-30);
+}
+
+Button:hover
+{
+    background-color: var(--ds-colors-window-dark-grey-2);
+}
+
+Button:active
+{
+    background-color: var(--ds-colors-window-dark-grey-3);
+    color: var(--ds-colors-window-yellow);
+}
+
+.unity-text-field__label
+{
+    padding: var(--ds-metrics-window-pixels-4);
+}
+
+TextField
+{
+    padding: var(--ds-metrics-window-pixels-4);
+}
+
+TextField:focus > .unity-text-field__label
+{
+    color: var(--ds-colors-window-yellow);
+}
+
+.unity-text-field__input
+{
+    max-height: var(--ds-metrics-window-pixels-30); 
+    min-width: var(--ds-metrics-window-pixels-50);
+    border-color: var(--ds-colors-window-dark-grey-6); 
+    border-radius: var(--ds-metrics-window-pixels-4);
+    background-color: var(--ds-colors-window-dark-grey-1);
+}
+
+.unity-text-field__input:focus
+{
+    color: var(--ds-colors-window-yellow);
+}

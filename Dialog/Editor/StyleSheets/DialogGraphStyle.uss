@@ -1,0 +1,180 @@
+:root
+{
+    --ds-colors-grid-light-grey-1: #2b2b2b;
+    --ds-colors-grid-light-grey-2: rgba(51, 51, 51, 0.4);
+    --ds-colors-grid-light-grey-3: rgba(51, 51, 51, 1);
+
+    --ds-colors-window-dark-grey-1: #1D1D1E;
+    --ds-colors-window-dark-grey-2: #2B2D2F;
+    --ds-colors-window-dark-grey-3: #212325;
+    --ds-colors-window-dark-grey-4: #232527;
+    --ds-colors-window-dark-grey-5: #252729;
+    --ds-colors-window-dark-grey-6: #27292C;
+    --ds-colors-window-yellow: #FDD057;
+
+    --ds-metrics-grid-25: 25;
+    --ds-metrics-window-pixels-negative-12: -12px;
+    --ds-metrics-window-pixels-negative-4: -4px;
+    --ds-metrics-window-pixels-0: 0px;
+    --ds-metrics-window-pixels-2: 2px;
+    --ds-metrics-window-pixels-4: 4px;
+    --ds-metrics-window-pixels-6: 6px;
+    --ds-metrics-window-pixels-8: 8px;
+    --ds-metrics-window-pixels-11: 11px;
+    --ds-metrics-window-pixels-16: 16px;
+    --ds-metrics-window-pixels-25: 25px;
+    --ds-metrics-window-pixels-30: 30px;
+    --ds-metrics-window-pixels-35: 35px;
+    --ds-metrics-window-pixels-40: 40px;
+    --ds-metrics-window-pixels-60: 60px;
+    --ds-metrics-window-pixels-80: 80px;
+    --ds-metrics-window-pixels-105: 105px;
+    --ds-metrics-window-pixels-120: 120px;
+    --ds-metrics-window-pixels-160: 160px;
+    --ds-metrics-window-pixels-240: 240px;
+    --ds-metrics-window-pixels-600: 600px;
+    --ds-metrics-window-pixels-1000: 1000px;
+};
+
+GridBackground
+{
+    --grid-background-color: var(--ds-colors-grid-light-grey-1);
+    --line-color: var(--ds-colors-grid-light-grey-2);
+    --thick-line-color: var(--ds-colors-grid-light-grey-3);
+    --spacing: var(--ds-metrics-grid-25);
+}
+
+.ds-node__extension-container
+{
+    background-color: var(--ds-colors-window-dark-grey-1);
+    padding: var(--ds-metrics-window-pixels-8);
+} 
+
+.ds-node__main_container
+{
+    background-color: var(--ds-colors-window-dark-grey-1);
+}
+
+.ds-node__custom-data-container
+{
+    background-color: var(--ds-colors-window-dark-grey-3);
+    border-radius: var(--ds-metrics-window-pixels-4);
+    padding: var(--ds-metrics-window-pixels-8);
+}
+
+.ds-node__label > .unity-label
+{
+    font-size: var(--ds-metrics-window-pixels-11);
+    padding: var(--ds-metrics-window-pixels-4);
+    margin: var(--ds-metrics-window-pixels-4);
+}
+
+.ds-node__textfield > .unity-text-field__input
+{
+    background-color: var(--ds-colors-window-dark-grey-1);
+    border-color: var(--ds-colors-window-dark-grey-6);
+    border-radius: var(--ds-metrics-window-pixels-4);
+    max-width: var(--ds-metrics-window-pixels-240);
+    min-width: var(--ds-metrics-window-pixels-160);
+    padding: var(--ds-metrics-window-pixels-4);
+}
+
+.ds-node__textfield_hidden > .unity-text-field__input
+{
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.ds-node__textfield_hidden > .unity-text-field__input:focus
+{
+    background-color: var(--ds-colors-window-dark-grey-1);
+    border-color: var(--ds-colors-window-dark-grey-6);
+}
+
+.ds-node__filename-textfield > .unity-text-field__input
+{
+    max-width: var(--ds-metrics-window-pixels-1000);
+}
+
+.ds-node__filename-textfield > .unity-text-field__input:focus
+{
+    margin: var(--ds-metrics-window-pixels-4);
+    padding: var(--ds-metrics-window-pixels-4);
+}
+
+.ds-node__choice-textfield > .unity-text-field__input
+{
+    font-size: var(--ds-metrics-window-pixels-11);
+    height: var(--ds-metrics-window-pixels-25);
+    max-width: var(--ds-metrics-window-pixels-1000);
+    min-width: var(--ds-metrics-window-pixels-105);
+}
+
+.ds-node__choice-textfield > .unity-text-field__input:focus
+{
+    height: var(--ds-metrics-window-pixels-25);
+    margin: var(--ds-metrics-window-pixels-4);
+    padding: var(--ds-metrics-window-pixels-4);
+}
+
+.ds-node__quote-textfield > .unity-text-field__input
+{
+    background-color: var(--ds-colors-window-dark-grey-4);
+    border-color: transparent;
+    border-left-color: var(--ds-colors-window-dark-grey-6);
+    border-left-width: var(--ds-metrics-window-pixels-4);
+    padding: var(--ds-metrics-window-pixels-4);
+    max-width: var(--ds-metrics-window-pixels-600);
+}
+
+.ds-node__quote-textfield > .unity-text-field__input:hover
+{
+    background-color: var(--ds-colors-window-dark-grey-5);
+}
+
+.ds-node__quote-textfield > .unity-text-field__input:focus
+{
+    background-color: var(--ds-colors-window-dark-grey-1);
+    border-color: var(--ds-colors-window-dark-grey-6);
+}
+
+.ds-node__button
+{
+    background-color: var(--ds-colors-window-dark-grey-5);
+    border-color: var(--ds-colors-window-dark-grey-1);
+    margin: var(--ds-metrics-window-pixels-4);
+    max-height: var(--ds-metrics-window-pixels-30);
+}
+
+.ds-node__button:hover
+{
+    background-color: var(--ds-colors-window-dark-grey-2);
+}
+
+.ds-node__button:active
+{
+    background-color: var(--ds-colors-window-dark-grey-3);
+    color: var(--ds-colors-window-yellow);
+}
+
+TextField
+{
+    margin-left: var(--ds-metrics-window-pixels-0);
+}
+
+.ds-node__custom-data_container > Foldout
+{
+    margin-left: var(--ds-metrics-window-pixels-negative-4);
+    margin-top: var(--ds-metrics-window-pixels-4);
+}
+
+.ds-node__custom-data_container > Foldout > TextField
+{
+    margin-left: var(--ds-metrics-window-pixels-negative-12);
+    margin-top: var(--ds-metrics-window-pixels-8);
+}
+
+.unity-toggle__text
+{
+    margin-left: var(--ds-metrics-window-pixels-2);
+}
